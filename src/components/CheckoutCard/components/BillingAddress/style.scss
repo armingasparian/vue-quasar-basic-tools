@@ -1,0 +1,28 @@
+.billingAddress {
+  margin-top: 50px;
+  &__form {
+    margin-top: 20px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $dark_2;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .billingAddress {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .billingAddress {
+    margin-top: 30px;
+    &__form {
+      margin-top: 15px;
+    }
+  }
+}

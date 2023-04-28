@@ -1,0 +1,63 @@
+.lifetimeWarranty {
+  padding: 30px;
+  background: rgba($rgb_dark_4, 0.1);
+  margin-top: 20px;
+  &__add {
+    display: flex;
+    justify-content: space-between;
+    > p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: $dark_2;
+      margin-top: 7px;
+      padding-right: 85px;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 115px;
+      width: fit-content;
+      height: 62px;
+      background: $dark_1;
+      border-radius: 10px;
+      margin-top: -20px;
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .lifetimeWarranty__add > p {
+    padding-right: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .lifetimeWarranty {
+    margin-top: 30px;
+    padding: 15px;
+    &__add {
+      flex-direction: column;
+      > p {
+        padding-right: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      div {
+        height: 42px;
+        position: relative;
+        min-width: 150px;
+        margin-top: 0;
+        p br {
+          display: none;
+        }
+      }
+    }
+  }
+}

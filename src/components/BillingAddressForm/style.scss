@@ -1,0 +1,40 @@
+.name-lastname,
+.city-postcode,
+.mm-cvv {
+  display: flex;
+  justify-content: space-between;
+
+  > div {
+    width: calc(50% - 12px);
+  }
+}
+
+.city-postcode {
+  input {
+    padding: 18px 60px 18px 25px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .name-lastname,
+  .city-postcode,
+  .mm-cvv {
+    flex-direction: column;
+
+    > div {
+      width: 100%;
+    }
+  }
+  .city-postcode input {
+    padding: 18px 30px 18px 20px !important;
+  }
+  .billingAddress__form {
+    .inputRadio-block.opened {
+      padding-top: 20px;
+
+      > div:nth-child(2) {
+        padding-top: 0;
+      }
+    }
+  }
+}

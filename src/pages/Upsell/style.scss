@@ -1,0 +1,75 @@
+.upSell {
+  max-width: 870px;
+  margin: 60px auto 0 auto;
+  padding: 0 40px 100px 40px;
+
+  &__buttons {
+    a {
+      text-decoration: none;
+    }
+    .agreement {
+      background: $dark_1;
+      border-radius: 16px;
+      height: 77px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 281px;
+      margin: 0 auto;
+      cursor: pointer;
+
+      p {
+        font-weight: 600;
+        font-size: 24.4286px;
+        line-height: 33px;
+        color: white;
+      }
+      img {
+        margin-left: 13px;
+      }
+    }
+
+    .rejectment {
+      margin-top: 30px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      color: $dark_2;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .upSell {
+    padding: 30px 16px 26px 16px;
+    margin-top: 0;
+    background: $ascent_2;
+  }
+}
+
+@media (max-width: 575px) {
+  .upSell__buttons {
+    .agreement {
+      height: 42px;
+      width: 100%;
+      border-radius: 10px;
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      img {
+        margin-left: 7px;
+        width: 11px;
+      }
+    }
+    .rejectment {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: $dark_2;
+    }
+  }
+}

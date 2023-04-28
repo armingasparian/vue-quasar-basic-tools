@@ -1,0 +1,29 @@
+.header-toolbar {
+  min-height: 80px;
+  background: $dark_bg;
+  > img {
+    margin-left: 20.8%
+  }
+}
+
+@media (max-width: 768px) {
+  .header-toolbar {
+    min-height: 56px;
+    > img {
+      margin-left: 28px;
+      width: 133px;
+      height: 28px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .header-toolbar {
+    min-height: 44px;
+    > img {
+      margin-left: 4px;
+      width: 95px;
+      height: 20px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.safeCheckoutCard {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  &__content {
+    > div:first-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      img {
+        margin-right: 8.5px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: $dark_2;
+      }
+    }
+    div:nth-child(2) {
+      display: flex;
+      justify-content: center;
+      gap: 7px;
+      div {
+        cursor: pointer;
+      }
+      img {
+        width: 40px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1045px) {
+  .safeCheckoutCard {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .safeCheckoutCard {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .safeCheckoutCard {
+    padding: 30px 15px;
+    &__content > div:first-child img {
+      margin-right: 11px;
+    }
+  }
+}

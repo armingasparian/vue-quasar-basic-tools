@@ -1,0 +1,21 @@
+.shippingMethod {
+  margin-top: 26px;
+  &__form {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shippingMethod {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .shippingMethod {
+    margin-top: 15px;
+    &__form {
+      margin-top: 15px;
+    }
+  }
+}

@@ -1,0 +1,147 @@
+.checkout {
+  max-width: 1680px;
+  margin: 60px auto 0 auto;
+  padding: 0 40px 100px 40px;
+
+  > .row {
+    gap: 30px;
+  }
+
+  &__item-cards {
+    max-width: 975px;
+    width: 100%;
+  }
+
+  &__item-others {
+    max-width: 595px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 993px) {
+  .checkout__item-others {
+    .paymentMethodCard {
+      .inputRadio-block.cards.opened {
+        .mm-cvv {
+          flex-wrap: wrap;
+
+          > div {
+            width: 100%;
+          }
+        }
+      }
+
+      &__content {
+        .cards .card-types {
+          img:nth-child(2),
+          img:nth-child(3) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1145px) and (min-width: 993px) {
+  .checkout__item-cards {
+    .shopPayButton,
+    .payPalButton,
+    .googlePayButton {
+      button {
+        width: 127px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1085px) and (min-width: 993px) {
+  .checkout__item-cards {
+    .checkoutCard {
+      padding: 40px 25px;
+    }
+
+    .lifetimeWarranty,
+    .expressCheckout {
+      padding: 30px 25px;
+    }
+
+    .expressCheckout__buttons {
+      gap: 10px;
+    }
+  }
+  .checkout__item-others {
+    .orderCard,
+    .safeCheckoutCard,
+    .jeweleryCard,
+    .paymentMethodCard {
+      padding: 40px 25px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .checkout {
+    > .row {
+      flex-wrap: wrap;
+    }
+
+    &__item-others {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .checkout {
+    padding-bottom: 42px;
+
+    > .row {
+      gap: 40px;
+    }
+
+    &__item-others {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .checkout__item-others {
+    .safeCheckoutCard {
+      order: 2;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .checkout__item-cards {
+    .expressCheckout__buttons {
+      gap: 15px;
+    }
+    .shopPayButton,
+    .payPalButton,
+    .googlePayButton {
+      button {
+        width: 134px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .checkout {
+    > .row{
+      gap: 30px;
+    }
+    margin: 30px auto 0 auto;
+    padding: 0 16px 42px 16px;
+    .orderCardMobile {
+      margin-top: 30px;
+    }
+  }
+  .checkout__item-cards {
+    .expressCheckout__buttons {
+      gap: 13px;
+      flex-wrap: wrap;
+    }
+  }
+}

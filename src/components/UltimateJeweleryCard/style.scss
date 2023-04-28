@@ -1,0 +1,30 @@
+.jeweleryCard {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  &__content {
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: $dark_2;
+      margin: 12px 0 20px 0;
+    }
+    li {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: $dark_2;
+      list-style-type: none;
+      margin-bottom: 4px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}

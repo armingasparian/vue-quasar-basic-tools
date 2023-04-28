@@ -1,0 +1,21 @@
+.shippingAddress {
+  margin-top: 50px;
+  &__form {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shippingAddress {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .shippingAddress {
+    margin-top: 30px;
+    &__form {
+      margin-top: 15px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.shopPayButton {
+  button {
+    height: 50px;
+    width: 147px;
+    background: rgba(90, 49, 244, 0.1);
+    border: 1px solid rgba(90, 49, 244, 0.6);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.payPalButton {
+  button {
+    height: 50px;
+    width: 147px;
+    background: rgba(17, 57, 132, 0.1);
+    border: 1px solid rgba(17, 57, 132, 0.6);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.googlePayButton {
+  button {
+    height: 50px;
+    width: 147px;
+    background: rgba(234, 64, 50, 0.1);
+    border: 1px solid rgba(234, 64, 50, 0.6);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

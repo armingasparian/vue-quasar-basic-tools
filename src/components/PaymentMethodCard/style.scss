@@ -1,0 +1,100 @@
+.paymentMethodCard {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 30px;
+  &__content {
+    margin-top: 30px;
+    .cards, .paypal {
+      position: relative;
+        .card-types{
+          display: flex;
+          gap: 10px;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          button {
+            width: 55px;
+            height: 24px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: $dark_2;
+            background: white;
+            border: 1.13734px solid $dark_5;
+            border-radius: 4.54936px;
+          }
+        }
+    }
+    .billing-contract {
+      display: flex;
+      margin-bottom: 30px;
+      align-items: flex-start;
+      input[type=checkbox] {
+        min-width: 20px;
+        height: 20px;
+        width: fit-content;
+        border: 1.5px solid $dark_4;
+        border-radius: 2px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $dark_2;
+        margin-left: 12px;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+    .complete-purchase {
+      button {
+        width: 100%;
+        cursor: pointer;
+        height: 56px;
+        background: $dark_1;
+        border-radius: 16px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .paymentMethodCard {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .paymentMethodCard {
+    padding: 30px 15px;
+    &__content {
+      margin-top: 20px;
+      .complete-purchase button {
+        height: 42px;
+        border-radius: 10px;
+        font-weight: 500;
+      }
+      .paypal .card-types {
+        right: 15px;
+      }
+      .cards {
+        min-height: 100px;
+        .card-types {
+          position: absolute;
+          top: 62px;
+          right: 20px;
+          left: 15px;
+        }
+      }
+    }
+  }
+}

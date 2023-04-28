@@ -1,0 +1,215 @@
+.input-style {
+  margin-bottom: 24px;
+
+  img {
+    position: absolute;
+    top: 18px;
+    left: 25px;
+  }
+
+  input {
+    padding: 18px 60px;
+    background: white;
+    border: 1px solid $dark_9;
+    border-radius: 16px;
+    width: 100%;
+    color: $dark_2;
+    font-size: 16px;
+    line-height: 20px;
+    max-height: 56px;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: $dark_4;
+    }
+
+    &[type=date] {
+      padding: 18px 10px 18px 60px;
+    }
+  }
+
+  select {
+    padding: 15px 60px 18px 55px;
+    background: white;
+    border: 1px solid $dark_9;
+    border-radius: 16px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $dark_4;
+    max-height: 56px;
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $danger;
+  }
+
+  &.error {
+    input {
+      border: 1px solid red;
+    }
+  }
+
+  .card-image-style {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+  }
+}
+
+.checkbox-style {
+  margin-top: -7px;
+  margin-left: -7px;
+
+  > div.q-checkbox__inner {
+    min-width: 37px;
+    height: 37px;
+    width: 37px;
+
+    &.q-checkbox__inner--truthy {
+      color: $dark_2;
+    }
+  }
+
+  > div.q-checkbox__label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $dark_2;
+  }
+}
+
+.user-card-input {
+  &::placeholder {
+    text-transform: capitalize;
+  }
+}
+
+.inputRadio-block {
+  background: rgba($dark_7, 0.4);
+  border-radius: 16px;
+  min-height: 64px;
+  padding: 0 25px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+
+  label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark_2;
+    margin-left: 10px;
+  }
+
+  input[type=radio] {
+    border: 0px;
+    width: 24px;
+    height: 24px;
+    color: $dark_2;
+    accent-color: $dark_2;
+  }
+
+  &__collection {
+    display: flex;
+    align-items: center;
+  }
+
+  &.cards:first-child {
+    > div {
+
+      align-items: center;
+    }
+  }
+
+  &.cards {
+    > div:first-child {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &.opened {
+    display: block;
+    padding-top: 20px;
+
+    .inputRadio-block__collection {
+      margin-bottom: 20px;
+    }
+
+    &.cards {
+      > div:first-child {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .input-style {
+    margin-bottom: 15px;
+
+    input {
+      padding: 13px 55px;
+      max-height: 46px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      border-radius: 12px;
+
+      &::placeholder {
+        color: $dark_4;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 13px;
+      left: 20px;
+    }
+
+    select {
+      padding: 10px 55px 12px 50px;
+      max-height: 46px;
+      border-radius: 12px;
+    }
+
+    .card-image-style {
+      top: 11px;
+    }
+  }
+  .checkbox-style {
+    margin-top: -2px;
+    margin-left: -7px;
+  }
+  .inputRadio-block {
+    margin-bottom: 15px;
+    padding: 0 15px;
+
+    &.cards > div:first-child {
+      > input {
+        margin-top: -30px;
+      }
+
+      label {
+        margin-top: -30px;
+      }
+    }
+
+    &.opened {
+      padding-top: 48px;
+
+      > div:nth-child(2) {
+        padding-top: 40px;
+      }
+    }
+  }
+}

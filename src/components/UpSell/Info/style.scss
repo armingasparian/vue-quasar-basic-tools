@@ -1,0 +1,29 @@
+.upSell__InfoSection {
+  margin-bottom: 40px;
+  p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $dark_2;
+    span {
+      font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .upSell__InfoSection p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 575px) {
+  .upSell__InfoSection {
+    margin-bottom: 30px;
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
